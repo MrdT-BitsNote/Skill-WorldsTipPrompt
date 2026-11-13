@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "skill": "dsh-prompt-polish",
+  "note": "Subset of cases.json that applies to the rewrite-only plugin prompt (no intent triage).",
+  "cases": [
+    {
+      "id": "p1_vague_zh",
+      "kind": "vague",
+      "draft": "帮我写个脚本把那个日报表格汇总一下",
+      "must": [
+        "日报",
+        "汇总"
+      ],
+      "forbidden": [
+        "Python",
+        "pandas",
+        "Excel",
+        "React",
+        "TypeScript"
+      ],
+      "language": "zh",
+      "add_max": 200
+    },
+    {
+      "id": "p2_facts_zh",
+      "kind": "facts",
+      "draft": "把 build 目录下 index.js 里那个 Math.round 改一下，v2.3.1 之后金额差 1 分",
+      "must": [
+        "build",
+        "index.js",
+        "Math.round",
+        "v2.3.1",
+        "1 分"
+      ],
+      "forbidden": [
+        "TypeScript",
+        "单测",
+        "pytest",
+        "React"
+      ],
+      "language": "zh",
+      "add_max": 280
+    },
+    {
+      "id": "p5_english",
+      "kind": "english",
+      "draft": "make the login page faster, it takes like 3 seconds on mobile",
+      "must": [
+        "login",
+        "3 second"
+      ],
+      "forbidden": [
+        "React",
+        "Vue",
+        "webpack"
+      ],
+      "language": "en",
+      "add_max": 300
+    },
+    {
+      "id": "p6_structured_zh",
+      "kind": "structured",
+      "draft": "按结构写：给用户列表加个搜索",
+      "must": [
+        "目标",
+        "上下文",
+        "要求",
+        "验收"
+      ],
+      "forbidden": [
+        "React",
+        "Vue",
+        "Elasticsearch"
+      ],
+      "language": "zh",
+      "add_max": 400
+    }
+  ]
+}

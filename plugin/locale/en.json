@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Prompt polish",
+    "description": "Adds an Optimize control beside the composer. It rewrites the current draft into a clearer, more actionable prompt with the default model and puts the result back into the draft, ready to edit or send.",
+    "detail": "docs/DETAIL.md"
+  }
+}

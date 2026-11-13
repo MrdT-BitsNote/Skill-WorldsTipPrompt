@@ -1,0 +1,19 @@
+# The prompt-polish bundle: one row whose Host half registers the rewrite
+# command and whose Client half contributes the composer control.
+#
+# Tunables (all optional; omit for the profile default). Because the bundle
+# ships no Config schema, any malformed value is ignored instead of failing
+# activation:
+#
+# - insert:
+#     - id: dsh-prompt-polish
+#       name: 'dsh-prompt-polish'
+#       config:
+#         provider: deepseek-official
+#         model: deepseek-v4-flash
+#         temperature: 0.2
+#         maxTokens: 1024
+#         mode: clarity          # clarity | structured | detail | brief
+- insert:
+    - id: dsh-prompt-polish
+      name: 'dsh-prompt-polish'

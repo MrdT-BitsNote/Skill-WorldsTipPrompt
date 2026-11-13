@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Prompt polish">
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="#1b2a4a"/>
+  <path d="M58 26l9.6 26.4L94 62l-26.4 9.6L58 98 48.4 71.6 22 62l26.4-9.6z" fill="#ffd76a"/>
+  <path d="M92 74l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#7cc4ff"/>
+  <rect x="24" y="86" width="30" height="6" rx="3" fill="#5d7bb0"/>
+  <rect x="24" y="98" width="18" height="6" rx="3" fill="#3f5680"/>
+</svg>

@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "skill": "worldstip-prompt-polish",
+  "cases": [
+    {
+      "id": "c1_vague_zh",
+      "kind": "vague",
+      "draft": "帮我写个脚本把那个日报表格汇总一下",
+      "must": [
+        "日报",
+        "汇总"
+      ],
+      "forbidden": [
+        "Python",
+        "pandas",
+        "Excel",
+        "React",
+        "TypeScript"
+      ],
+      "language": "zh",
+      "add_max": 200
+    },
+    {
+      "id": "c2_facts_zh",
+      "kind": "facts",
+      "draft": "把 build 目录下 index.js 里那个 Math.round 改一下，v2.3.1 之后金额差 1 分",
+      "must": [
+        "build",
+        "index.js",
+        "Math.round",
+        "v2.3.1",
+        "1 分"
+      ],
+      "forbidden": [
+        "TypeScript",
+        "单测",
+        "pytest",
+        "React"
+      ],
+      "language": "zh",
+      "add_max": 280
+    },
+    {
+      "id": "c3_evaluate_zh",
+      "kind": "evaluate",
+      "draft": "我这个 prompt 是不是太长了：你是一个非常专业的助手，请务必认真仔细地思考，不要出错，务必准确。",
+      "must": [],
+      "must_any": [
+        "问题",
+        "冗余",
+        "铺陈",
+        "不可验收",
+        "长在",
+        "没有约束"
+      ],
+      "forbidden": [],
+      "language": "zh",
+      "add_max": 280
+    },
+    {
+      "id": "c4_complete_zh",
+      "kind": "already_complete",
+      "draft": "请按以下格式输出 JSON：{\"name\": string, \"age\": number}；只输出 JSON，不要解释。",
+      "must": [],
+      "must_any": [
+        "可以直接用",
+        "不需要",
+        "已完整",
+        "够用",
+        "原样"
+      ],
+      "language": "zh",
+      "add_max": 30
+    },
+    {
+      "id": "c5_english",
+      "kind": "english",
+      "draft": "make the login page faster, it takes like 3 seconds on mobile",
+      "must": [
+        "login",
+        "3 second"
+      ],
+      "forbidden": [
+        "React",
+        "Vue",
+        "webpack"
+      ],
+      "language": "en",
+      "add_max": 300
+    },
+    {
+      "id": "c6_structured_zh",
+      "kind": "structured",
+      "draft": "按结构写：给用户列表加个搜索",
+      "must": [
+        "目标",
+        "上下文",
+        "要求",
+        "验收"
+      ],
+      "forbidden": [
+        "React",
+        "Vue",
+        "Elasticsearch"
+      ],
+      "language": "zh",
+      "add_max": 400
+    }
+  ]
+}
